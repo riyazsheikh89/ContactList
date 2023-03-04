@@ -1,6 +1,9 @@
 const express = require('express');
 const path = require('path');
-const PORT = 8001;
+const dotenv = require('dotenv');
+dotenv.config();
+
+const PORT = process.env.PORT;
 
 const db = require('./config/dbConfig');
 const Contact = require('./models/contact');
@@ -37,7 +40,6 @@ app.get('/practice', (req, res) => {
 app.post('/add-contact', async (req, res) => {     // Add contact to the Database
     try {
         const response = await Contact.create(req.body);
-        console.log(response);
     } catch (error) {
         console.log(error); 
     }
