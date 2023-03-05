@@ -6,7 +6,7 @@ body{
 #page-heading{
     text-align: center;
     margin-top: 35px;
-    color: gray;
+    color: rgb(118, 111, 111);
 }
 
 #contacts-list-container{
@@ -15,9 +15,9 @@ body{
 }
 
 .contact{
-    padding: 3px;
+    padding: 5px;
     border: 1px solid white;
-    background-color: #6f92f9;
+    background-color: #7b97ea;
     box-shadow: 1px 1px 1px 1px lightgray;
     color: white;
 }
