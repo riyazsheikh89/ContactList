@@ -30,12 +30,6 @@ app.get('/', async (req, res) => {                // Display all the contacts
 });
 
 
-app.get('/practice', (req, res) => {
-    return res.render('practice', {
-        title: 'Playground'
-    })
-});
-
 
 app.post('/add-contact', async (req, res) => {     // Add contact to the Database
     try {

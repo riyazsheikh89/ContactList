@@ -3,6 +3,32 @@ body{
     font-family: sans-serif;
 }
 
+.main-cls {
+    display: flex;
+}
+
+#input-sec {
+    margin: 20px;
+}
+#input-sec form input[type="text"],
+#input-sec form input[type="number"],
+#input-sec form button {
+    display: block;
+    width: 250px;
+    margin-bottom: 10px;
+    padding: 5px;
+    font-family: sans-serif;
+}
+
+#input-sec form button {
+    /* display: inline-block; */
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
 #page-heading{
     text-align: center;
     margin-top: 35px;
@@ -10,8 +36,9 @@ body{
 }
 
 #contacts-list-container{
-    padding: 0;
+    padding-left: 50px;
     list-style: none;
+    width: 50vw;
 }
 
 .contact{
@@ -19,7 +46,9 @@ body{
     border: 1px solid white;
     background-color: #7b97ea;
     box-shadow: 1px 1px 1px 1px lightgray;
-    color: white;
+    color: rgb(22, 22, 22);
+    font-weight: 600;
+    list-style: none;
 }
 
 .contact .details{
@@ -30,6 +59,11 @@ body{
 }
 
 .contact p{
-    margin: 5px 0;
+    margin: 7px 0;
+    padding-left: 5px;
+}
+
+a {
+    color: #d83b36;
 }
 
